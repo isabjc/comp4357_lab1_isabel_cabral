@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    padding: 1rem;
+}
+
+.game-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.game-controls label {
+    font-weight: bold;
+}
+
+.game-controls input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 5rem;
+}
+
+.game-controls button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.game-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 1.5rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.memory-button {
+    width: 10em;
+    height: 5em;
+    border: 2px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.memory-button:disabled {
+    cursor: default;
+    opacity: 1;
+}
